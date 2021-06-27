@@ -46,7 +46,7 @@ for j=1:num_trials
     x_mpc = zeros(num_mpc, 2); %pos, vel
     u_rl = 0;
 
-    index_markov_chain = [5 6 3 4];
+    index_markov_chain = [5 6 7 4];
     for i=1:num_mpc
         x_mpc_ref(i, :, :) = generationReference(index_markov_chain(i));
         vel_x_mpc_ref(i, :) = x_mpc_ref(i, 2, :);
